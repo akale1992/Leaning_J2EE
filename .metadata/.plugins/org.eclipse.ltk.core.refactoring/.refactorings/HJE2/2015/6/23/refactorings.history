@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;demopack1.Immutable&apos; to &apos;ImmutableTree&apos;&#x0D;&#x0A;- Original project: &apos;HJE2&apos;&#x0D;&#x0A;- Original element: &apos;demopack1.Immutable&apos;&#x0D;&#x0A;- Renamed element: &apos;demopack1.ImmutableTree&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Immutable&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;demopack1{Immutable.java[Immutable" matchStrategy="1" name="ImmutableTree" qualified="false" references="true" similarDeclarations="false" stamp="1433426114241" textual="false" version="1.0"/>
+</session>

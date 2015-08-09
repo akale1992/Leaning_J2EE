@@ -1,0 +1,6 @@
+package com.jspider.app;
+
+public interface JarTest {
+	 void printMessage() ;
+
+}

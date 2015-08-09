@@ -1,0 +1,24 @@
+package com.jspider.app;
+
+import java.sql.*;
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Driver;
+
+public class Test {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		Driver d = new Driver();
+		String url = "jdbc:mysql://localhost:3306/";
+		String dbName = "Test";
+		String driver = "com.mysql.jdbc.Driver";
+		String userName = "mysql";
+	    String password = "mysql";
+	    Connection con = (Connection) DriverManager.getConnection(url, userName, password);
+	    con.close();
+
+						
+
+	}
+
+}

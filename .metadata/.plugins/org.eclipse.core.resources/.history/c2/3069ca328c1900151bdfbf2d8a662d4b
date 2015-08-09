@@ -1,0 +1,17 @@
+package com.jspider.app;
+
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Driver;
+
+public class Test {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		Driver d = new Driver();
+		
+		
+
+	}
+
+}

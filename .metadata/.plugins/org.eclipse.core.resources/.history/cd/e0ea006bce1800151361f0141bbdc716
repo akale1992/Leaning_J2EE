@@ -1,0 +1,15 @@
+package com.jspider.app;
+
+public class TestMethod implements JarTest{
+	public void message(){
+		System.out.println("   printing message   ");
+	}
+
+	@Override
+	public void printMessage() {
+		// TODO Auto-generated method stub
+		System.out.println("....printing interface message....");
+		
+	}
+
+}

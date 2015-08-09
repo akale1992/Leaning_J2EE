@@ -1,0 +1,13 @@
+package com.testing;
+
+import com.jspider.TestInterfaceImplement;
+
+public class Test43 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      TestInterfaceImplement rt = new TestInterfaceImplement();
+      rt.printMessage();
+	}
+
+}

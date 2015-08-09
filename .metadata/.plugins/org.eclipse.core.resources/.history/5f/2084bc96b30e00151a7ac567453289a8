@@ -1,0 +1,14 @@
+package demopack1;
+
+public class MyTestThread {
+	public static void main(String[] args) {
+		ThreadA th1 = new ThreadA();
+		ThreadB th2 = new ThreadB();
+		th1.start();
+		th2.start();
+	}
+
+	
+	
+
+}

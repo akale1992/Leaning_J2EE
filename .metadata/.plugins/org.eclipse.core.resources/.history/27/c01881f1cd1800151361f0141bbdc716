@@ -1,0 +1,8 @@
+package com.jspider.app;
+
+public class TestMethod {
+	public void message(){
+		System.out.println("   printing message   ");
+	}
+
+}

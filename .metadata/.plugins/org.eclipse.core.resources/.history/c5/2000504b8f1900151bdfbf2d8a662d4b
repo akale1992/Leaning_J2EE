@@ -1,0 +1,39 @@
+package com.jspider.app;
+
+import java.sql.*;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Driver;
+
+public class Test {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		Driver d = new Driver();
+		String url = "jdbc:mysql://localhost:3306/";
+		String dbName = "Test";
+		String driver = "com.mysql.jdbc.Driver";
+		String userName = "mysql";
+		String password = "mysql";
+		try {
+			Class.forName(driver).newInstance();
+			Connection con = (Connection) DriverManager.getConnection(url
+					+ dbName, userName, password);
+			Statement st = con.createStatement();
+			ResultSet res = st.executeQuery("SELECT * FROM employee");
+			while (res.next()) {
+				int id = res.getInt("id");
+				String msg = res.getString("msg");
+				System.out.println(id + "\t" + msg);
+			}
+
+			con.close();
+		} catch (InstantiationException | IllegalAccessException
+				| ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

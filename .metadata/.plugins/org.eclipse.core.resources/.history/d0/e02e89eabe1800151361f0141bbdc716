@@ -1,0 +1,8 @@
+package com.jspiders.app.jdbc;
+
+public class Test {
+	void m1(){
+		System.out.println("in m1()");
+	}
+
+}

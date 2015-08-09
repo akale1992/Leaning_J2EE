@@ -1,0 +1,18 @@
+package demopack1;
+
+public class MyTestThread {
+	public static void main(String[] args) {
+		ThreadA th1 = new ThreadA();
+		ThreadB th2 = new ThreadB();
+		System.out.println(th1.getPriority());
+		System.out.println(th2.getPriority());
+		th1.start();
+		th2.start();
+		
+		
+	}
+
+	
+	
+
+}

@@ -1,0 +1,14 @@
+package com.ashish;
+
+
+public class Testjar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TestInterfaceImp rv = new TestInterfaceImp();
+		rv.m2();
+
+	}
+
+}

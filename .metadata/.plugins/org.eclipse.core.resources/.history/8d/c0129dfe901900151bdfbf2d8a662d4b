@@ -1,0 +1,46 @@
+package com.jspider.app;
+
+import java.sql.*;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Driver;
+
+public class Test {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		
+		String url = "jdbc:mysql://localhost:3306/";
+		String dbName = "j2ee";
+		String driver = "com.mysql.jdbc.Driver";
+		String userName = "mysql";
+		String password = "mysql";
+		try {
+			Class.forName(driver);
+			Connection con = (Connection) DriverManager.getConnection(url
+					+ dbName, userName, password);
+			Statement st = con.createStatement();
+			ResultSet res = st.executeQuery("SELECT * FROM employee");
+			ResultSet res1 = st.executeQuery("SELECT * FROM employee ");
+			
+			while (res.next()) {
+				int eid = res.getInt("eid");
+				String ename = res.getString("ename");
+				System.out.println(eid + "\t" + ename);
+			}
+			while (res1.next()) {
+				int eid = res1.getInt("eid");
+				String ename = res1.getString("ename");
+				System.out.println(eid + "\t" + ename);
+			}
+
+
+			con.close();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package demopack1;
+
+public class ThreadB extends Thread {
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for (int i = 11; i <= 15; i++) {
+			System.out.println(i);
+			Thread.sleep(300);
+			
+		}
+	}
+
+}
